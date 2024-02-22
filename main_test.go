@@ -39,6 +39,7 @@ func dropTable() {
 	}
 
 	_, err = db.Exec("DROP TABLE IF EXISTS users")
+	fmt.Println("-- dropTable --")
 	if err != nil {
 		fmt.Println(err)
 		return
